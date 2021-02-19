@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>随笔</title>
+    <url>/2021/02/19/%E9%9A%8F%E7%AC%94/</url>
+    <content><![CDATA[<div class="note ">
+            <h4 id="基于牛顿冷却定律的热度算法"><a href="#基于牛顿冷却定律的热度算法" class="headerlink" title="基于牛顿冷却定律的热度算法"></a>基于牛顿冷却定律的热度算法</h4>
+          </div>
+<p>热度算法主要应用于热门推荐，对于任意时间t，与温度T的变化关系如下：<br>$$<br>T_{(t)} = T_{(t_0)}e^{k\Delta t} , (t \geq t_0)<br>$$</p>
+<a id="more"></a>
+
+<div class="note success">
+            <h4 id="Codeblock-in-note"><a href="#Codeblock-in-note" class="headerlink" title="Codeblock in note"></a>Codeblock in note</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">code block in note tag</span><br><span class="line">code block in note tag</span><br><span class="line">code block in note tag</span><br></pre></td></tr></table></figure>
+          </div>]]></content>
+  </entry>
+</search>
