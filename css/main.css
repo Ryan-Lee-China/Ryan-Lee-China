@@ -384,36 +384,33 @@ td {
   margin-top: 3px;
 }
 .toggle.toggle-arrow .toggle-line-first {
-  left: 50%;
   top: 2px;
-  transform: rotate(45deg);
+  transform: rotate(-45deg);
   width: 50%;
 }
 .toggle.toggle-arrow .toggle-line-middle {
-  left: 2px;
   width: 90%;
 }
 .toggle.toggle-arrow .toggle-line-last {
-  left: 50%;
   top: -2px;
-  transform: rotate(-45deg);
+  transform: rotate(45deg);
   width: 50%;
 }
 .toggle.toggle-close .toggle-line-first {
-  transform: rotate(-45deg);
   top: 5px;
+  transform: rotate(-45deg);
 }
 .toggle.toggle-close .toggle-line-middle {
   opacity: 0;
 }
 .toggle.toggle-close .toggle-line-last {
-  transform: rotate(45deg);
   top: -5px;
+  transform: rotate(45deg);
 }
 .highlight,
 pre {
-  background: #f7f7f7;
-  color: #4d4d4c;
+  background: #000;
+  color: #eaeaea;
   line-height: 1.6;
   margin: 0 auto 20px;
 }
@@ -430,7 +427,7 @@ code {
   word-wrap: break-word;
 }
 .highlight *::selection {
-  background: #d6d6d6;
+  background: #424242;
 }
 .highlight pre {
   border: 0;
@@ -447,8 +444,8 @@ code {
   padding: 0;
 }
 .highlight figcaption {
-  background: #eff2f3;
-  color: #4d4d4c;
+  background: #292929;
+  color: #eaeaea;
   display: flex;
   font-size: 0.875em;
   justify-content: space-between;
@@ -456,10 +453,10 @@ code {
   padding: 0.5em;
 }
 .highlight figcaption a {
-  color: #4d4d4c;
+  color: #eaeaea;
 }
 .highlight figcaption a:hover {
-  border-bottom-color: #4d4d4c;
+  border-bottom-color: #eaeaea;
 }
 .highlight .gutter {
   -moz-user-select: none;
@@ -468,14 +465,14 @@ code {
   user-select: none;
 }
 .highlight .gutter pre {
-  background: #eff2f3;
-  color: #869194;
+  background: #292929;
+  color: #666;
   padding-left: 10px;
   padding-right: 10px;
   text-align: right;
 }
 .highlight .code pre {
-  background: #f7f7f7;
+  background: #000;
   padding-left: 10px;
   width: 100%;
 }
@@ -491,26 +488,26 @@ pre {
 }
 pre code {
   background: none;
-  color: #4d4d4c;
+  color: #eaeaea;
   font-size: 0.875em;
   padding: 0;
   text-shadow: none;
 }
 pre .deletion {
-  background: #fdd;
+  background: #800000;
 }
 pre .addition {
-  background: #dfd;
+  background: #008000;
 }
 pre .meta {
-  color: #eab700;
+  color: #e7c547;
   -moz-user-select: none;
   -ms-user-select: none;
   -webkit-user-select: none;
   user-select: none;
 }
 pre .comment {
-  color: #8e908c;
+  color: #969896;
 }
 pre .variable,
 pre .attribute,
@@ -525,7 +522,7 @@ pre .html .doctype,
 pre .css .id,
 pre .css .class,
 pre .css .pseudo {
-  color: #c82829;
+  color: #d54e53;
 }
 pre .number,
 pre .preprocessor,
@@ -535,7 +532,7 @@ pre .literal,
 pre .params,
 pre .constant,
 pre .command {
-  color: #f5871f;
+  color: #e78c45;
 }
 pre .ruby .class .title,
 pre .css .rules .attribute,
@@ -548,11 +545,11 @@ pre .ruby .symbol,
 pre .xml .cdata,
 pre .special,
 pre .formula {
-  color: #718c00;
+  color: #b9ca4a;
 }
 pre .title,
 pre .css .hexcolor {
-  color: #3e999f;
+  color: #70c0b1;
 }
 pre .function,
 pre .python .decorator,
@@ -562,11 +559,11 @@ pre .ruby .title .keyword,
 pre .perl .sub,
 pre .javascript .title,
 pre .coffeescript .title {
-  color: #4271ae;
+  color: #7aa6da;
 }
 pre .keyword,
 pre .javascript .function {
-  color: #8959a8;
+  color: #c397d8;
 }
 .blockquote-center {
   border-left: none;
@@ -663,6 +660,9 @@ pre .javascript .function {
   flex-grow: 1;
   list-style-type: none;
   border-radius: 0 0 0 0;
+  transition-delay: 0s;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
 }
 @media (max-width: 413px) {
   .post-body .tabs ul.nav-tabs li.tab,
@@ -746,8 +746,9 @@ pre .javascript .function {
   margin-bottom: 20px;
   padding: 1em;
   position: relative;
-  border: 1px solid #eee;
-  border-left-width: 5px;
+  background: #f9f9f9;
+  border: initial;
+  border-left: 3px solid #eee;
 }
 .post-body .note h2,
 .post-body .note h3,
@@ -778,6 +779,7 @@ pre .javascript .function {
   margin-bottom: 0;
 }
 .post-body .note.default {
+  background: #f7f7f7;
   border-left-color: #777;
 }
 .post-body .note.default h2,
@@ -788,6 +790,7 @@ pre .javascript .function {
   color: #777;
 }
 .post-body .note.primary {
+  background: #f5f0fa;
   border-left-color: #6f42c1;
 }
 .post-body .note.primary h2,
@@ -798,6 +801,7 @@ pre .javascript .function {
   color: #6f42c1;
 }
 .post-body .note.info {
+  background: #eef7fa;
   border-left-color: #428bca;
 }
 .post-body .note.info h2,
@@ -808,6 +812,7 @@ pre .javascript .function {
   color: #428bca;
 }
 .post-body .note.success {
+  background: #eff8f0;
   border-left-color: #5cb85c;
 }
 .post-body .note.success h2,
@@ -818,6 +823,7 @@ pre .javascript .function {
   color: #5cb85c;
 }
 .post-body .note.warning {
+  background: #fdf8ea;
   border-left-color: #f0ad4e;
 }
 .post-body .note.warning h2,
@@ -828,6 +834,7 @@ pre .javascript .function {
   color: #f0ad4e;
 }
 .post-body .note.danger {
+  background: #fcf1f2;
   border-left-color: #d9534f;
 }
 .post-body .note.danger h2,
@@ -1139,11 +1146,6 @@ pre .javascript .function {
   position: fixed;
   top: 0;
 }
-@media (max-width: 991px) {
-  .sidebar {
-    display: none;
-  }
-}
 .sidebar-inner {
   color: #999;
   padding: 18px 10px;
@@ -1169,6 +1171,7 @@ pre .javascript .function {
   margin: 0 auto;
   max-width: 96px;
   padding: 2px;
+  border-radius: 50%;
 }
 .site-author-name {
   color: #f5f5f5;
@@ -1196,7 +1199,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ffe387;
+  background: #9cffff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1315,7 +1318,6 @@ pre .javascript .function {
   .sidebar-toggle {
     left: 20px;
     opacity: 0.8;
-    display: none;
   }
 }
 .sidebar-toggle:hover .toggle-line {
@@ -1343,10 +1345,9 @@ pre .javascript .function {
   line-height: 1.8;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
 }
 .post-toc .nav .nav-child {
-  display: none;
+  display: block;
 }
 .post-toc .nav .active > .nav-child {
   display: block;
@@ -1504,6 +1505,68 @@ pre .javascript .function {
     transform: scale(1.1);
   }
 }
+@media (max-width: 567px) {
+  .content-wrap {
+    padding: initial !important;
+  }
+  .posts-expand .post-meta {
+    margin: 3px 0 10px 0 !important;
+  }
+  .post-block {
+    margin-top: initial !important;
+    padding: 8px 18px 8px !important;
+  }
+  .posts-collapse {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .post-body h1,
+  .post-body h2,
+  .post-body h3,
+  .post-body h4,
+  .post-body h5,
+  .post-body h6 {
+    margin: 10px 0 8px;
+  }
+  .post-body .note h1,
+  .post-body .tabs .tab-content .tab-pane h1,
+  .post-body .note h2,
+  .post-body .tabs .tab-content .tab-pane h2,
+  .post-body .note h3,
+  .post-body .tabs .tab-content .tab-pane h3,
+  .post-body .note h4,
+  .post-body .tabs .tab-content .tab-pane h4,
+  .post-body .note h5,
+  .post-body .tabs .tab-content .tab-pane h5,
+  .post-body .note h6,
+  .post-body .tabs .tab-content .tab-pane h6 {
+    margin: 0 5px;
+  }
+  .post-body > p {
+    margin: 0 0 10px 0;
+  }
+  .post-body .note > p,
+  .post-body .tabs .tab-content .tab-pane > p {
+    padding: 0 5px;
+  }
+  .post-body img,
+  .post-body video {
+    margin-bottom: 10px !important;
+  }
+  .post-body .note {
+    margin-bottom: 10px !important;
+    padding: 10px !important;
+  }
+  .post-body .tabs .tab-content .tab-pane {
+    padding: 10px 10px 0 10px !important;
+  }
+  .post-eof {
+    margin: 40px auto 20px !important;
+  }
+  .pagination {
+    margin-top: 40px;
+  }
+}
 .back-to-top {
   font-size: 12px;
   text-align: center;
@@ -1539,6 +1602,16 @@ pre .javascript .function {
     left: 20px;
     opacity: 0.8;
   }
+}
+.reading-progress-bar {
+  background: #37c6c0;
+  display: block;
+  height: 3px;
+  left: 0;
+  position: fixed;
+  width: 0;
+  z-index: 1500;
+  top: 0;
 }
 .post-body {
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
@@ -2391,10 +2464,24 @@ embed {
   display: inline-block;
 }
 .sidebar {
-  left: -320px;
+  right: -320px;
 }
 .sidebar.sidebar-active {
-  left: 0;
+  right: 0;
+}
+.sidebar-toggle,
+.back-to-top {
+  left: auto;
+  right: 30px;
+}
+@media (max-width: 991px) {
+  .sidebar-toggle,
+  .back-to-top {
+    right: 20px;
+  }
+}
+.book-mark-link {
+  left: 30px;
 }
 .sidebar {
   width: 320px;
