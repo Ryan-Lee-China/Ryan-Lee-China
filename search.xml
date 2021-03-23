@@ -1,6 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>个人中心</title>
+    <url>/2021/03/23/%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83/</url>
+    <content><![CDATA[<link href="http://kevinburke.bitbucket.org/markdowncss/markdown.css" rel="stylesheet"></link>
+利用个人中心搭建wolai个人空间的主页框架，内容从这里开始生长、延展...
+您可以放心删除对您来说没用的分类入口，保留对您有用的入口
+<a id="more"></a>
+这里可以写一些重要突出的文字，提醒自己
+或者你想写啥都行！
+
+
+
+<p>这里是一些常用的入口（可以随意增删）</p>
+<p><a href="https://www.wolai.com/ryanpro/62VFnhabZZRALqDFJPXYJR">mooc</a></p>
+<p><a href="https://www.wolai.com/ryanpro/oHuBezu1R3f79hmo7soa6P">大V们</a></p>
+<p><a href="https://www.wolai.com/ryanpro/skXQuKmpZ1VheC7BhCajkV">得到</a></p>
+<p><a href="https://www.wolai.com/ryanpro/drwkuZ61GDjV7EbsAYNnsN">豆瓣在读</a></p>
+<p><a href="https://www.wolai.com/ryanpro/7GZSkccFCZYSBubKR7mA2d">steam游戏库</a></p>
+<p><a href="https://www.wolai.com/ryanpro/p4AEnygCsVrFvb6cYVmvFJ">青你pick</a></p>
+<p><a href="https://www.wolai.com/ryanpro/nFuD8wUSvEVFt6oHXfjiAa">todo</a></p>
+<p><a href="https://www.wolai.com/ryanpro/3XubpUF6SH1QYM3JKCWGba">课程表</a></p>
+<p><a href="https://www.wolai.com/ryanpro/cDp8C9m5FEmCTXP8M7ayAV">打卡</a></p>
+<p><a href="https://www.wolai.com/ryanpro/djGgxR1RD8JkMxF9UB5M8A">旅行</a></p>
+<p>下面是一些分类的入口（可以随意增删）</p>
+<h2 id="🤠-日常"><a href="#🤠-日常" class="headerlink" title="🤠 日常"></a>🤠 日常</h2><hr>
+<h4 id="📕-日记"><a href="#📕-日记" class="headerlink" title="📕 日记"></a>📕 日记</h4><p><a href="https://www.wolai.com/ryanpro/nVbNZae7Sk4ksh1SJ2hBs">2021年2月</a></p>
+<p><a href="https://www.wolai.com/ryanpro/9ZjupchFPr1uxmctRNTsjV">2021年</a></p>
+<p><a href="https://www.wolai.com/ryanpro/2zXEAoR379Ba3Q3coZ7s3c">2020年</a></p>
+<h4 id="❤️-恋爱"><a href="#❤️-恋爱" class="headerlink" title="❤️ 恋爱"></a>❤️ 恋爱</h4><p><a href="https://www.wolai.com/ryanpro/sfEByRtF4VH8YDcTSRVD4U">恋爱记录</a></p>
+<p><a href="https://www.wolai.com/ryanpro/2fzrSu7PZEGKQVfJebvAQ9">交流反思</a></p>
+<p><a href="https://www.wolai.com/ryanpro/t9tV1NuWJrsWKdt48942V5">趣事记录</a></p>
+<h4 id="🏃🏼-健身"><a href="#🏃🏼-健身" class="headerlink" title="🏃🏼 健身"></a>🏃🏼 健身</h4><p><a href="https://www.wolai.com/ryanpro/8QtdfnphtooWzZ8VtCAQ63">训练记录</a></p>
+<p><a href="https://www.wolai.com/ryanpro/uPmet4bXLU89KJyQVun97Q">力量举</a></p>
+<p><a href="https://www.wolai.com/ryanpro/b8nL1U7rehrLqtypKT5s7q">营养学</a></p>
+<h4 id="📖-阅读"><a href="#📖-阅读" class="headerlink" title="📖 阅读"></a>📖 阅读</h4><p><a href="https://www.wolai.com/ryanpro/giHT4NgYgq2wuG59Rky7Vr">读书笔记</a></p>
+<p><a href="https://www.wolai.com/ryanpro/hp4bU9vqRDK7B3k4qHfQ7t">书评</a></p>
+<p><a href="https://www.wolai.com/ryanpro/qg5EdACLwikSXPzvz8sSLw">书单</a></p>
+<h2 id="👨🏼‍💼-工作"><a href="#👨🏼‍💼-工作" class="headerlink" title="👨🏼‍💼 工作"></a>👨🏼‍💼 工作</h2><hr>
+<h4 id="✍🏻-输出"><a href="#✍🏻-输出" class="headerlink" title="✍🏻 输出"></a>✍🏻 输出</h4><p><a href="https://www.wolai.com/ryanpro/xhjV5Kbw1PJXvAhpHe5H9T">作品</a></p>
+<p><a href="https://www.wolai.com/ryanpro/qNTcnG7UM7wo2hrGYuRU8g">草稿</a></p>
+<p><a href="https://www.wolai.com/ryanpro/Ycibp8z24ErGsbPsEHCBW">素材库</a></p>
+<h4 id="👨🏼‍💻-会议"><a href="#👨🏼‍💻-会议" class="headerlink" title="👨🏼‍💻 会议"></a>👨🏼‍💻 会议</h4><p><a href="https://www.wolai.com/ryanpro/f9LWU5y8Fy3auhkzRF9vgK">晨会</a></p>
+<p><a href="https://www.wolai.com/ryanpro/iDr4NSdtCCv8n1Bxepum4p">月会</a></p>
+<p><a href="https://www.wolai.com/ryanpro/qt5QdfJixJymUDjvQCar9F">分享</a></p>
+<h4 id="🤦🏼‍♂️-复盘"><a href="#🤦🏼‍♂️-复盘" class="headerlink" title="🤦🏼‍♂️ 复盘"></a>🤦🏼‍♂️ 复盘</h4><p><a href="https://www.wolai.com/ryanpro/s8QygTbxBedg2YELUh4DxQ">每日反思</a></p>
+<p><a href="https://www.wolai.com/ryanpro/jSN8VnT5b3D5p674uTVU12">pdca循环</a></p>
+<p><a href="https://www.wolai.com/ryanpro/nAEQFTg3EVPoWjyJLCJNzb">项目复盘</a></p>
+<h4 id="💪🏻-规划"><a href="#💪🏻-规划" class="headerlink" title="💪🏻 规划"></a>💪🏻 规划</h4><p><a href="https://www.wolai.com/ryanpro/7xgd9hUKxx3SCtgZCNuk2f">2021目标</a></p>
+<p><a href="https://www.wolai.com/ryanpro/4yuXG71ZfNbJM1aw9R7yqH">三年规划</a></p>
+<p><a href="https://www.wolai.com/ryanpro/e4Zu9NgrPVkES52ZSRNQyr">十年规划</a></p>
+<h2 id="👨🏼‍🎓-学习"><a href="#👨🏼‍🎓-学习" class="headerlink" title="👨🏼‍🎓 学习"></a>👨🏼‍🎓 学习</h2><hr>
+<h4 id="🏫-课程"><a href="#🏫-课程" class="headerlink" title="🏫 课程"></a>🏫 课程</h4><p><a href="https://www.wolai.com/ryanpro/tg4FfjScwccmVxMvRCYemh">技能学习</a></p>
+<p><a href="https://www.wolai.com/ryanpro/iv49UL4NzLfAHRanpGom1z">理论积累</a></p>
+<p><a href="https://www.wolai.com/ryanpro/unmuPRuHWkwNVWy9TH46NW">输出交流</a></p>
+<h4 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h4><p><a href="https://www.wolai.com/ryanpro/iW4WQ48zcatB7xLq2VUjDK">问题记录</a></p>
+<p><a href="https://www.wolai.com/ryanpro/9oUYGyvFBa8fMtE3WaPDNE">交流分析</a></p>
+<p><a href="https://www.wolai.com/ryanpro/b7Z8VgpLFypM3q4b22bfys">解决方案</a></p>
+<h4 id="🤖-自我管理"><a href="#🤖-自我管理" class="headerlink" title="🤖 自我管理"></a>🤖 自我管理</h4><p><a href="https://www.wolai.com/ryanpro/quNVr6CgckJyxuPFF5sHd3">问题记录</a></p>
+<p><a href="https://www.wolai.com/ryanpro/ktXForAo9tyvfPSYVguWVL">方法学习</a></p>
+<p><a href="https://www.wolai.com/ryanpro/veHnEEAuASN8fTZn3F1xXN">解题思路</a></p>
+<h4 id="⛳-flag"><a href="#⛳-flag" class="headerlink" title="⛳ flag"></a>⛳ flag</h4><p><a href="https://www.wolai.com/ryanpro/6cyqXgA8jo2csgDyJ7tmTY">所有的旗</a></p>
+<p><a href="https://www.wolai.com/ryanpro/jBC38THMCtTnzMVmB5wWTF">心底欲望</a></p>
+<p><a href="https://www.wolai.com/ryanpro/4RaToogwuRmm84ZiV3CEMe">给的承诺</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>随笔</title>
     <url>/2021/02/19/%E9%9A%8F%E7%AC%94/</url>
     <content><![CDATA[<div class="note ">

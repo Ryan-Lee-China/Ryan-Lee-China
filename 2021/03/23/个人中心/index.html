@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"没有找到: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":true,"preload":true},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="利用个人中心搭建wolai个人空间的主页框架，内容从这里开始生长、延展... 您可以放心删除对您来说没用的分类入口，保留对您有用的入口">
+<meta property="og:type" content="article">
+<meta property="og:title" content="个人中心">
+<meta property="og:url" content="http://example.com/2021/03/23/%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83/index.html">
+<meta property="og:site_name" content="Ryan&#39;s space">
+<meta property="og:description" content="利用个人中心搭建wolai个人空间的主页框架，内容从这里开始生长、延展... 您可以放心删除对您来说没用的分类入口，保留对您有用的入口">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-03-23T02:45:09.378Z">
+<meta property="article:modified_time" content="2021-03-23T03:59:53.399Z">
+<meta property="article:author" content="Ryan Lee">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/2021/03/23/%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>个人中心 | Ryan's space</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Ryan's space</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/03/23/%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Ryan Lee">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ryan's space">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          个人中心
+        </h1>
+
+        <div class="post-meta">
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <link href="http://kevinburke.bitbucket.org/markdowncss/markdown.css" rel="stylesheet"></link>
+利用个人中心搭建wolai个人空间的主页框架，内容从这里开始生长、延展...
+您可以放心删除对您来说没用的分类入口，保留对您有用的入口
+<a id="more"></a>
+这里可以写一些重要突出的文字，提醒自己
+或者你想写啥都行！
+
+
+
+<p>这里是一些常用的入口（可以随意增删）</p>
+<p><a target="_blank" rel="noopener" href="https://www.wolai.com/ryanpro/62VFnhabZZRALqDFJPXYJR">mooc</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.wolai.com/ryanpro/oHuBezu1R3f79hmo7soa6P">大V们</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.wolai.com/ryanpro/skXQuKmpZ1VheC7BhCajkV">得到</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.wolai.com/ryanpro/drwkuZ61GDjV7EbsAYNnsN">豆瓣在读</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.wolai.com/ryanpro/7GZSkccFCZYSBubKR7mA2d">steam游戏库</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.wolai.com/ryanpro/p4AEnygCsVrFvb6cYVmvFJ">青你pick</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.wolai.com/ryanpro/nFuD8wUSvEVFt6oHXfjiAa">todo</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.wolai.com/ryanpro/3XubpUF6SH1QYM3JKCWGba">课程表</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.wolai.com/ryanpro/cDp8C9m5FEmCTXP8M7ayAV">打卡</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.wolai.com/ryanpro/djGgxR1RD8JkMxF9UB5M8A">旅行</a></p>
+<p>下面是一些分类的入口（可以随意增删）</p>
+<h2 id="🤠-日常"><a href="#🤠-日常" class="headerlink" title="🤠 日常"></a>🤠 日常</h2><hr>
+<h4 id="📕-日记"><a href="#📕-日记" class="headerlink" title="📕 日记"></a>📕 日记</h4><p><a target="_blank" rel="noopener" href="https://www.wolai.com/ryanpro/nVbNZae7Sk4ksh1SJ2hBs">2021年2月</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.wolai.com/ryanpro/9ZjupchFPr1uxmctRNTsjV">2021年</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.wolai.com/ryanpro/2zXEAoR379Ba3Q3coZ7s3c">2020年</a></p>
+<h4 id="❤️-恋爱"><a href="#❤️-恋爱" class="headerlink" title="❤️ 恋爱"></a>❤️ 恋爱</h4><p><a target="_blank" rel="noopener" href="https://www.wolai.com/ryanpro/sfEByRtF4VH8YDcTSRVD4U">恋爱记录</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.wolai.com/ryanpro/2fzrSu7PZEGKQVfJebvAQ9">交流反思</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.wolai.com/ryanpro/t9tV1NuWJrsWKdt48942V5">趣事记录</a></p>
+<h4 id="🏃🏼-健身"><a href="#🏃🏼-健身" class="headerlink" title="🏃🏼 健身"></a>🏃🏼 健身</h4><p><a target="_blank" rel="noopener" href="https://www.wolai.com/ryanpro/8QtdfnphtooWzZ8VtCAQ63">训练记录</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.wolai.com/ryanpro/uPmet4bXLU89KJyQVun97Q">力量举</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.wolai.com/ryanpro/b8nL1U7rehrLqtypKT5s7q">营养学</a></p>
+<h4 id="📖-阅读"><a href="#📖-阅读" class="headerlink" title="📖 阅读"></a>📖 阅读</h4><p><a target="_blank" rel="noopener" href="https://www.wolai.com/ryanpro/giHT4NgYgq2wuG59Rky7Vr">读书笔记</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.wolai.com/ryanpro/hp4bU9vqRDK7B3k4qHfQ7t">书评</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.wolai.com/ryanpro/qg5EdACLwikSXPzvz8sSLw">书单</a></p>
+<h2 id="👨🏼‍💼-工作"><a href="#👨🏼‍💼-工作" class="headerlink" title="👨🏼‍💼 工作"></a>👨🏼‍💼 工作</h2><hr>
+<h4 id="✍🏻-输出"><a href="#✍🏻-输出" class="headerlink" title="✍🏻 输出"></a>✍🏻 输出</h4><p><a target="_blank" rel="noopener" href="https://www.wolai.com/ryanpro/xhjV5Kbw1PJXvAhpHe5H9T">作品</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.wolai.com/ryanpro/qNTcnG7UM7wo2hrGYuRU8g">草稿</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.wolai.com/ryanpro/Ycibp8z24ErGsbPsEHCBW">素材库</a></p>
+<h4 id="👨🏼‍💻-会议"><a href="#👨🏼‍💻-会议" class="headerlink" title="👨🏼‍💻 会议"></a>👨🏼‍💻 会议</h4><p><a target="_blank" rel="noopener" href="https://www.wolai.com/ryanpro/f9LWU5y8Fy3auhkzRF9vgK">晨会</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.wolai.com/ryanpro/iDr4NSdtCCv8n1Bxepum4p">月会</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.wolai.com/ryanpro/qt5QdfJixJymUDjvQCar9F">分享</a></p>
+<h4 id="🤦🏼‍♂️-复盘"><a href="#🤦🏼‍♂️-复盘" class="headerlink" title="🤦🏼‍♂️ 复盘"></a>🤦🏼‍♂️ 复盘</h4><p><a target="_blank" rel="noopener" href="https://www.wolai.com/ryanpro/s8QygTbxBedg2YELUh4DxQ">每日反思</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.wolai.com/ryanpro/jSN8VnT5b3D5p674uTVU12">pdca循环</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.wolai.com/ryanpro/nAEQFTg3EVPoWjyJLCJNzb">项目复盘</a></p>
+<h4 id="💪🏻-规划"><a href="#💪🏻-规划" class="headerlink" title="💪🏻 规划"></a>💪🏻 规划</h4><p><a target="_blank" rel="noopener" href="https://www.wolai.com/ryanpro/7xgd9hUKxx3SCtgZCNuk2f">2021目标</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.wolai.com/ryanpro/4yuXG71ZfNbJM1aw9R7yqH">三年规划</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.wolai.com/ryanpro/e4Zu9NgrPVkES52ZSRNQyr">十年规划</a></p>
+<h2 id="👨🏼‍🎓-学习"><a href="#👨🏼‍🎓-学习" class="headerlink" title="👨🏼‍🎓 学习"></a>👨🏼‍🎓 学习</h2><hr>
+<h4 id="🏫-课程"><a href="#🏫-课程" class="headerlink" title="🏫 课程"></a>🏫 课程</h4><p><a target="_blank" rel="noopener" href="https://www.wolai.com/ryanpro/tg4FfjScwccmVxMvRCYemh">技能学习</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.wolai.com/ryanpro/iv49UL4NzLfAHRanpGom1z">理论积累</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.wolai.com/ryanpro/unmuPRuHWkwNVWy9TH46NW">输出交流</a></p>
+<h4 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h4><p><a target="_blank" rel="noopener" href="https://www.wolai.com/ryanpro/iW4WQ48zcatB7xLq2VUjDK">问题记录</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.wolai.com/ryanpro/9oUYGyvFBa8fMtE3WaPDNE">交流分析</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.wolai.com/ryanpro/b7Z8VgpLFypM3q4b22bfys">解决方案</a></p>
+<h4 id="🤖-自我管理"><a href="#🤖-自我管理" class="headerlink" title="🤖 自我管理"></a>🤖 自我管理</h4><p><a target="_blank" rel="noopener" href="https://www.wolai.com/ryanpro/quNVr6CgckJyxuPFF5sHd3">问题记录</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.wolai.com/ryanpro/ktXForAo9tyvfPSYVguWVL">方法学习</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.wolai.com/ryanpro/veHnEEAuASN8fTZn3F1xXN">解题思路</a></p>
+<h4 id="⛳-flag"><a href="#⛳-flag" class="headerlink" title="⛳ flag"></a>⛳ flag</h4><p><a target="_blank" rel="noopener" href="https://www.wolai.com/ryanpro/6cyqXgA8jo2csgDyJ7tmTY">所有的旗</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.wolai.com/ryanpro/jBC38THMCtTnzMVmB5wWTF">心底欲望</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.wolai.com/ryanpro/4RaToogwuRmm84ZiV3CEMe">给的承诺</a></p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/02/19/%E9%9A%8F%E7%AC%94/" rel="prev" title="随笔">
+      <i class="fa fa-chevron-left"></i> 随笔
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%A4%A0-%E6%97%A5%E5%B8%B8"><span class="nav-number">1.</span> <span class="nav-text">🤠 日常</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%F0%9F%93%95-%E6%97%A5%E8%AE%B0"><span class="nav-number">1.0.1.</span> <span class="nav-text">📕 日记</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E2%9D%A4%EF%B8%8F-%E6%81%8B%E7%88%B1"><span class="nav-number">1.0.2.</span> <span class="nav-text">❤️ 恋爱</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%F0%9F%8F%83%F0%9F%8F%BC-%E5%81%A5%E8%BA%AB"><span class="nav-number">1.0.3.</span> <span class="nav-text">🏃🏼 健身</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%F0%9F%93%96-%E9%98%85%E8%AF%BB"><span class="nav-number">1.0.4.</span> <span class="nav-text">📖 阅读</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%91%A8%F0%9F%8F%BC%E2%80%8D%F0%9F%92%BC-%E5%B7%A5%E4%BD%9C"><span class="nav-number">2.</span> <span class="nav-text">👨🏼‍💼 工作</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E2%9C%8D%F0%9F%8F%BB-%E8%BE%93%E5%87%BA"><span class="nav-number">2.0.1.</span> <span class="nav-text">✍🏻 输出</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%F0%9F%91%A8%F0%9F%8F%BC%E2%80%8D%F0%9F%92%BB-%E4%BC%9A%E8%AE%AE"><span class="nav-number">2.0.2.</span> <span class="nav-text">👨🏼‍💻 会议</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%F0%9F%A4%A6%F0%9F%8F%BC%E2%80%8D%E2%99%82%EF%B8%8F-%E5%A4%8D%E7%9B%98"><span class="nav-number">2.0.3.</span> <span class="nav-text">🤦🏼‍♂️ 复盘</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%F0%9F%92%AA%F0%9F%8F%BB-%E8%A7%84%E5%88%92"><span class="nav-number">2.0.4.</span> <span class="nav-text">💪🏻 规划</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%91%A8%F0%9F%8F%BC%E2%80%8D%F0%9F%8E%93-%E5%AD%A6%E4%B9%A0"><span class="nav-number">3.</span> <span class="nav-text">👨🏼‍🎓 学习</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%F0%9F%8F%AB-%E8%AF%BE%E7%A8%8B"><span class="nav-number">3.0.1.</span> <span class="nav-text">🏫 课程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%97%AE%E9%A2%98"><span class="nav-number">3.0.2.</span> <span class="nav-text">问题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%F0%9F%A4%96-%E8%87%AA%E6%88%91%E7%AE%A1%E7%90%86"><span class="nav-number">3.0.3.</span> <span class="nav-text">🤖 自我管理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E2%9B%B3-flag"><span class="nav-number">3.0.4.</span> <span class="nav-text">⛳ flag</span></a></li></ol></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Ryan Lee"
+      src="/images/avatar.gif">
+  <p class="site-author-name" itemprop="name">Ryan Lee</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Ryan Lee</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  
+  <script color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+</body>
+</html>
